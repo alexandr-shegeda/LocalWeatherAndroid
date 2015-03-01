@@ -3,7 +3,8 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
     </style>
-    <color name="blue_color" >
-        #00BCFF
-    </color>
+    <color name="blue_color" >#00BCFF</color>
+    <color name="local_time_color">#ff3cc4ff</color>
+    <color name="time_color">#ff14db3d</color>
+    <color name="activity_background">#ff1b4f65</color>
 </resources>
