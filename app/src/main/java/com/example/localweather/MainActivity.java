@@ -1,5 +1,6 @@
 package com.example.localweather;
 
+import android.provider.Settings;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -7,19 +8,23 @@ import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
+import java.sql.Time;
+import java.util.Date;
+
 
 public class MainActivity extends ActionBarActivity {
 
-    private TimePicker timePicker;
     private TextView local_time;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        local_time = (TextView) findViewById(R.id.local_time);
-        timePicker = (TimePicker) findViewById(R.id.timePicker);
-        local_time.setText(timePicker.getCurrentHour()+":"+timePicker.getCurrentMinute());
+//        local_time = (TextView) findViewById(R.id.local_time);
+//
+//        TimePicker time = new TimePicker(this);
+//        local_time.setText(time.getCurrentHour()+":"+time.getCurrentMinute());
     }
 
 
