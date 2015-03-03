@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
@@ -7,4 +7,22 @@
     <color name="local_time_color">#ff3cc4ff</color>
     <color name="time_color">#ff14db3d</color>
     <color name="activity_background">#ff1b4f65</color>
+
+    <item name="rounded_corner_button">
+        <shape android:shape="rectangle" >
+            <stroke
+                android:height="1.0dip"
+                android:width="1.0dip"
+                android:color="#ffee82ee" />
+
+            <solid android:color="#ffee82ee" />
+
+            <corners
+                android:bottomLeftRadius="102.0dip"
+                android:bottomRightRadius="102.0dip"
+                android:radius="102.0dip"
+                android:topLeftRadius="102.0dip"
+                android:topRightRadius="102.0dip" />
+        </shape>
+    </item>
 </resources>
