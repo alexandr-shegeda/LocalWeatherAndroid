@@ -8,5 +8,7 @@
     <string name="text_time">00:00</string>
     <string name="text_max_t">+8°C</string>
     <string name="text_min_t">+2°C</string>
+    <string name="uah_exchange">10</string>
+    <string name="rub_exchange">37,13</string>
 
 </resources>
