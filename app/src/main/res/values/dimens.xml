@@ -19,5 +19,6 @@
     <dimen name="activity_layout_land_5_height">70dp</dimen>
     <dimen name="activity_layout_land_6_height">50dp</dimen>
     <dimen name="activity_layout_land_7_height">55dp</dimen>
+    <dimen name="white_place">30dp</dimen>
 
 </resources>
