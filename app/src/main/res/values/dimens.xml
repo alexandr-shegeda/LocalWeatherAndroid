@@ -7,17 +7,16 @@
     <dimen name="activity_layout_2_height">52dp</dimen>
     <dimen name="activity_layout_3_height">60dp</dimen>
     <dimen name="activity_layout_4_height">65dp</dimen>
-    <dimen name="activity_layout_5_height">70dp</dimen>
-    <dimen name="activity_layout_6_height">50dp</dimen>
-    <dimen name="activity_layout_7_height">55dp</dimen>
-
+    <dimen name="activity_layout_5_height">55dp</dimen>
+    <dimen name="activity_layout_6_height">55dp</dimen>
+    <dimen name="activity_layout_7_height">25dp</dimen>
 
     <dimen name="activity_layout_land_1_height">200dp</dimen>
     <dimen name="activity_layout_land_2_height">52dp</dimen>
     <dimen name="activity_layout_land_3_height">60dp</dimen>
     <dimen name="activity_layout_land_4_height">65dp</dimen>
     <dimen name="activity_layout_land_5_height">70dp</dimen>
-    <dimen name="activity_layout_land_6_height">50dp</dimen>
+    <dimen name="activity_layout_land_6_height">35dp</dimen>
     <dimen name="activity_layout_land_7_height">55dp</dimen>
     <dimen name="white_place">30dp</dimen>
 

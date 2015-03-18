@@ -179,7 +179,7 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="370dp"
+        android:layout_height="match_parent"
         android:layout_gravity="center_horizontal|bottom">
 
         <LinearLayout
@@ -251,7 +251,8 @@
                         android:layout_alignBottom="@+id/textView6"
                         android:layout_alignParentRight="true"
                         android:layout_alignParentEnd="true"
-                        android:background="@drawable/triangle" />
+                        android:background="@drawable/triangle"
+                        android:layout_marginBottom="-2dp" />
                 </RelativeLayout>
             </LinearLayout>
         </LinearLayout>
@@ -583,10 +584,10 @@
             android:orientation="vertical"
             android:background="#ff225c73">
 
-            <ImageView
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageView10"
+                android:id="@+id/btn_exchange"
                 android:layout_centerVertical="true"
                 android:layout_centerHorizontal="true"
                 android:background="@drawable/symbol_exchange" />
@@ -595,8 +596,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:layout_alignParentTop="true"
-                android:layout_toLeftOf="@+id/imageView10"
-                android:layout_toStartOf="@+id/imageView10">
+                android:layout_toLeftOf="@+id/btn_exchange"
+                android:layout_toStartOf="@+id/btn_exchange">
 
                 <RelativeLayout
                     android:layout_width="fill_parent"
@@ -625,7 +626,7 @@
                             android:layout_height="wrap_content"
                             android:textAppearance="?android:attr/textAppearanceSmall"
                             android:text="UAH"
-                            android:id="@+id/textView21"
+                            android:id="@+id/txt_uah_label"
                             android:textSize="12dp"
                             android:layout_gravity="left|center_vertical"
                             android:textColor="#ffffffff"
@@ -641,7 +642,7 @@
                                 android:layout_height="wrap_content"
                                 android:inputType="numberDecimal"
                                 android:ems="3"
-                                android:id="@+id/editText"
+                                android:id="@+id/txt_uah"
                                 android:textColor="@color/blue_color"
                                 android:text="@string/uah_exchange"
                                 android:layout_marginTop="-10dp"
@@ -658,8 +659,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/imageView10"
-                android:layout_toEndOf="@+id/imageView10">
+                android:layout_toRightOf="@+id/btn_exchange"
+                android:layout_toEndOf="@+id/btn_exchange">
 
                 <RelativeLayout
                     android:layout_width="fill_parent"
@@ -685,7 +686,7 @@
                             android:textAppearance="?android:attr/textAppearanceSmall"
                             android:text="RUB"
                             android:textSize="12dp"
-                            android:id="@+id/textView22"
+                            android:id="@+id/txt_rub_label"
                             android:layout_gravity="center_vertical|left|right"
                             android:textColor="#ffffffff"
                             android:layout_marginLeft="10dp" />
@@ -700,7 +701,7 @@
                                 android:layout_height="wrap_content"
                                 android:inputType="numberDecimal"
                                 android:ems="3"
-                                android:id="@+id/editText3"
+                                android:id="@+id/txt_rub"
                                 android:textColor="@color/blue_color"
                                 android:text="@string/rub_exchange"
                                 android:layout_marginTop="-10dp"
@@ -719,11 +720,6 @@
             android:layout_height="@dimen/activity_layout_7_height"
             android:orientation="vertical"
             android:background="#ff1b4059"></LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="fill_parent"
-            android:layout_height="25dp"></LinearLayout>
 
     </LinearLayout>
 

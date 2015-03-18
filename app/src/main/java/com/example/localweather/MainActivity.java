@@ -1,30 +1,78 @@
 package com.example.localweather;
 
-import android.provider.Settings;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.util.Log;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.TimePicker;
-
-import java.sql.Time;
-import java.util.Date;
-
 
 public class MainActivity extends ActionBarActivity {
 
-    private TextView local_time;
+    private EditText txt_uah;
+    private EditText txt_rub;
+
+    static final String LOG_TAG = "MainActivity";
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        local_time = (TextView) findViewById(R.id.local_time);
+
+        txt_rub = (EditText) findViewById(R.id.txt_rub);
+        txt_uah = (EditText) findViewById(R.id.txt_uah);
+
+
+        TextWatcher uahListener = new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                if(txt_uah.getText().length()==0)
+                {
+                    txt_rub.setText("0");
+                }else
+                txt_rub.setText( ""+Float.parseFloat(txt_uah.getText().toString())*3.49);
+            }
+        };
+        txt_uah.addTextChangedListener(uahListener);
+
+//        TextWatcher rubListener = new TextWatcher() {
+//            @Override
+//            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 //
-//        TimePicker time = new TimePicker(this);
-//        local_time.setText(time.getCurrentHour()+":"+time.getCurrentMinute());
+//            }
+//
+//            @Override
+//            public void onTextChanged(CharSequence s, int start, int before, int count) {
+//
+//            }
+//
+//            @Override
+//            public void afterTextChanged(Editable s) {
+//                if(txt_rub.getText().length()==0)
+//                {
+//                    txt_uah.setText("0");
+//                }else
+//                    txt_uah.setText( ""+Float.parseFloat(txt_rub.getText().toString())/2.84);
+//            }
+//        };
+//        txt_rub.addTextChangedListener(rubListener);
     }
 
 
